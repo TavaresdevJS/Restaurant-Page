@@ -6,4 +6,6 @@ export function createAboutPage() {
   heading.id = 'title';
   heading.textContent = 'About us';
   container.appendChild(heading);
+
+  return container;
 }

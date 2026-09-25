@@ -19,7 +19,8 @@ const tabs = [
 ];
 
 tabs.forEach(tab => {
-  tab.button.addEventListener('click', e => {
+  tab.button.addEventListener('click', () => {
     content.innerHTML = '';
+    content.appendChild(tab.render());
   });
 });

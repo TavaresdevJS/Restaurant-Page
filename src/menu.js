@@ -7,4 +7,6 @@ export function createMenuPage() {
   heading.id = 'title';
   heading.textContent = 'Our Menu';
   container.appendChild(heading);
+
+  return container;
 }
