@@ -19,5 +19,7 @@ const tabs = [
 ];
 
 tabs.forEach(tab => {
-  tab.addEventListener('click', () => {});
+  tab.button.addEventListener('click', e => {
+    content.innerHTML = '';
+  });
 });
