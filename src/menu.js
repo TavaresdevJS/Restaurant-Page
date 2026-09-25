@@ -93,5 +93,12 @@ export function createMenuPage() {
     ],
   };
 
-  Object.entries(menu).forEach(([key, value]) => {});
+  Object.entries(menu).forEach(([sectionName, dishes]) => {
+    const menuSection = document.createElement('h2');
+    const menuDishes = document.createElement('ul');
+    menuSection.textContent = sectionName;
+    container.appendChild(menuSection);
+    container.appendChild(menuDishes);
+    dishes.forEach(({ name, description, price }) => {});
+  });
 }
