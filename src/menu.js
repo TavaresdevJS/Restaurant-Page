@@ -92,4 +92,6 @@ export function createMenuPage() {
       },
     ],
   };
+
+  Object.entries(menu).forEach(([key, value]) => {});
 }
