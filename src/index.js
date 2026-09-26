@@ -10,7 +10,6 @@ const menu = document.getElementById('menu');
 const about = document.getElementById('about');
 
 content.appendChild(createHomePage());
-console.log('Hi, this will be a great restaurant page');
 
 const tabs = [
   { button: home, render: createHomePage },
