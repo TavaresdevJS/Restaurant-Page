@@ -150,6 +150,8 @@ nav button:hover {
   max-width: 900px;
   margin: 0 auto;
   padding: 3rem 2rem;
+  opacity: 0;
+  animation: fadeInUp 0.8s ease-out forwards;
 }
 
 .menu-section {
@@ -206,12 +208,25 @@ nav button:hover {
 
 #about-title {
   color: #621317;
+  opacity: 0;
+  animation: fadeInUp 0.8s ease-out forwards;
+  animation-delay: 0.1s;
 }
 
-.about-description,
+.about-description {
+  color: #3a3128;
+  line-height: 1.7;
+  opacity: 0;
+  animation: fadeInUp 0.8s ease-out forwards;
+  animation-delay: 0.3s;
+}
+
 .about-mission {
   color: #3a3128;
   line-height: 1.7;
+  opacity: 0;
+  animation: fadeInUp 0.8s ease-out forwards;
+  animation-delay: 0.5s;
 }
 
 @keyframes fadeInUp {
@@ -247,26 +262,4 @@ nav button:hover {
 
 .home-img {
   animation-delay: 0.2s;
-}
-
-#about-title,
-.about-description,
-.about-mission {
-  opacity: 0;
-  animation: fadeInUp 0.8s ease-out forwards;
-}
-
-#about-title {
-  animation-delay: 0.1s;
-}
-.about-description {
-  animation-delay: 0.3s;
-}
-.about-mission {
-  animation-delay: 0.5s;
-}
-
-.menu-page {
-  opacity: 0;
-  animation: fadeInUp 0.8s ease-out forwards;
 }
