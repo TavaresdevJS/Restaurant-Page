@@ -76,10 +76,10 @@ h6 {
 
 /* What is above is the CSS reset, below is my own CSS */
 
-body {
-  background-color: #ece5cf;
+* {
+  font-family: 'Cormorant Garamond';
 }
 
-.home-page {
-  font-family: 'Cormorant Garamond';
+body {
+  background-color: #ece5cf;
 }
