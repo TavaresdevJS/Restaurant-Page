@@ -218,3 +218,25 @@ button {
 .home-img {
   animation-delay: 0.2s;
 }
+
+#about-title,
+.about-description,
+.about-mission {
+  opacity: 0;
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+#about-title {
+  animation-delay: 0.1s;
+}
+.about-description {
+  animation-delay: 0.3s;
+}
+.about-mission {
+  animation-delay: 0.5s;
+}
+
+.menu-page {
+  opacity: 0;
+  animation: fadeInUp 0.8s ease-out forwards;
+}
