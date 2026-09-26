@@ -109,14 +109,34 @@ button {
 
 .home-page {
   display: grid;
+  grid-template-columns: 1fr 400px;
+  gap: 2rem;
+  align-items: center;
   padding: 1.2rem;
 }
 
-.home-page img {
-  grid-column: 2;
-  grid-row: 1/4;
+.home-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.home-img {
   width: 100%;
   aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+.home-page {
+  display: grid;
+  grid-template-columns: 1fr 400px;
+  gap: 2rem;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1.2rem;
 }
 
 .menu-page {
@@ -162,4 +182,39 @@ button {
   text-align: left;
   color: #6b6250;
   font-size: 0.95rem;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.home-text h1,
+.home-text .tagline,
+.home-text .description-text,
+.home-img {
+  opacity: 0;
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.home-text h1 {
+  animation-delay: 0.1s;
+}
+
+.home-text .tagline {
+  animation-delay: 0.3s;
+}
+
+.home-text .description-text {
+  animation-delay: 0.5s;
+}
+
+.home-img {
+  animation-delay: 0.2s;
 }
