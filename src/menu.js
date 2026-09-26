@@ -8,8 +8,6 @@ export function createMenuPage() {
   heading.textContent = 'Our Menu';
   container.appendChild(heading);
 
-  return container;
-
   const menu = {
     Antipasti: [
       {
@@ -99,6 +97,25 @@ export function createMenuPage() {
     menuSection.textContent = sectionName;
     container.appendChild(menuSection);
     container.appendChild(menuDishes);
-    dishes.forEach(({ name, description, price }) => {});
+    dishes.forEach(({ name, description, price }) => {
+      const listItem = document.createElement('li');
+      const dishTitle = document.createElement('h3');
+      const dishParagraph = document.createElement('p');
+      const priceSection = document.createElement('span');
+
+      listItem.classList.add('list-item');
+      dishTitle.classList.add('dish-title');
+      dishParagraph.classList.add('dish-paragraph');
+      priceSection.classList.add('dish-price');
+
+      dishTitle.textContent = name;
+      dishParagraph.textContent = description;
+      priceSection.textContent = price;
+
+      menuDishes.appendChild(listItem);
+      listItem.append(dishTitle, dishParagraph, priceSection);
+    });
   });
+
+  return container;
 }
