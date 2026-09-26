@@ -95,16 +95,27 @@ body {
 header {
   background-color: #621317;
   display: flex;
-  padding: 1.1rem;
+  padding: 1.1rem 2rem;
   align-items: center;
   justify-content: space-between;
 }
 
-button {
-  color: black;
-  background-color: white;
+nav {
+  display: flex;
+  gap: 1.75rem;
+}
+
+nav button {
+  background: none;
   border: none;
+  color: #ece5cf;
+  font-size: 1.5rem;
   cursor: pointer;
+  padding: 0.25rem 0;
+}
+
+nav button:hover {
+  color: #ffffff;
 }
 
 .home-page {
@@ -113,6 +124,10 @@ button {
   gap: 2rem;
   align-items: center;
   padding: 1.2rem;
+}
+
+#title {
+  color: #621317;
 }
 
 .home-text {
@@ -182,6 +197,25 @@ button {
   text-align: left;
   color: #6b6250;
   font-size: 0.95rem;
+}
+
+.about-page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+#about-title {
+  color: #621317;
+}
+
+.about-description,
+.about-mission {
+  color: #3a3128;
+  line-height: 1.7;
 }
 
 @keyframes fadeInUp {
