@@ -83,3 +83,18 @@ h6 {
 body {
   background-color: #ece5cf;
 }
+
+header {
+  background-color: #621317;
+  display: flex;
+  padding: 1.1rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+button {
+  color: black;
+  background-color: white;
+  border: none;
+  cursor: pointer;
+}
